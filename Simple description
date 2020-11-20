@@ -1,0 +1,10 @@
+#consider the following scenario
+y<-5
+myfunc<-function(x){
+x+y
+}
+#what happens when we call;
+myfunc(4)
+#9 is returned. This is because in lexical scoping, the value of y in myfunc is looked up in the environment in which the function was defined.In this case, myfunc was defined in the global environment therefore the value of y is 5
+
+
